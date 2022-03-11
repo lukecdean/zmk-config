@@ -16,6 +16,19 @@
 
 / { 
 
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -47,14 +60,12 @@
             key-position = <27 28>;
             bindings = <&kp ENTER>;
         };
-                
 
         combo_z {
             timeout-ms = <50>;
             key-position = <20 21>;
             bindings = <&kp Z>;
         };
-
 
         combo_q {
             timeout-ms = <50>;
@@ -64,62 +75,46 @@
  
     };
 
-        behaviors {
-            hm: homerow_mods {
-                compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping-term-ms = <200>;
-                quick_tap_ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
 
-            l0s: layer_0_symbols {
-                compatible = 'zmk,behavior-hold-tap";
-                label = "layer_0_symbols";
-                #binding-cells = <2>;
-                tapping-term-ms = <200>;
-                quick-tap-ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-        };
 
-        keymap {
-                compatible = "zmk,keymap";
-                
-       		default_layer_0 {
-		bindings = <
-		&kp J &kp G &kp M &kp P &kp V 						&l0s - = &l0s ? / &l0s . ! &l0s _ , &l0s " ' 
-		&kp R &hm LGUI S &hm LCTRL N &hm LALT D &kp B 	    &l0s : ; &hm RALT A &hm RCTRL E &hm RGUI I &kp H
-		&mt LSFT X &kp F &kp L &kp C &kp W				    &l0s $ 0 &kp U  &kp O &kp Y &mt LSFT K
-          				&kp LSHIFT &kp T  				&kp SPC &to 1 
-		>;
-		};
+    keymap {
+            compatible = "zmk,keymap";
+            
+        default_layer_0 {
+    bindings = <
+    &kp J &kp G &kp M &kp P &kp V 						&l0s - = &l0s ? / &l0s . ! &l0s _ , &l0s " ' 
+    &kp R &hm LGUI S &hm LCTRL N &hm LALT D &kp B 	    &l0s : ; &hm RALT A &hm RCTRL E &hm RGUI I &kp H
+    &mt LSFT X &kp F &kp L &kp C &kp W				    &l0s $ 0 &kp U  &kp O &kp Y &mt LSFT K
+                    &kp LSHIFT &kp T  				&kp SPC &to 1 
+    >;
+    };
 
-            symbols_layer_1 {
-        bindings = <
-        &kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR   &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp PLUS &kp PIPE 
-		&kp TAB    &kp PLUS    &kp LA(RBKT)      &kp LA(LS(RBKT))   &kp SQT     &kp BSLH &kp LT &kp LPRN  &kp RPRN  &kp GT
-		&kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))   &kp DQT 	&to 3 &kp LBKT &kp LBRC &kp RBRC &kp RBKT  
-					                                           &to 0  &to 2     &sk RALT &to 3 
-        >;
-        };	
+        symbols_layer_1 {
+    bindings = <
+    &kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR   &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp PLUS &kp PIPE 
+    &kp TAB    &kp PLUS    &kp LA(RBKT)      &kp LA(LS(RBKT))   &kp SQT     &kp BSLH &kp LT &kp LPRN  &kp RPRN  &kp GT
+    &kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))   &kp DQT 	&to 3 &kp LBKT &kp LBRC &kp RBRC &kp RBKT  
+                                                           &to 0  &to 2     &sk RALT &to 3 
+    >;
+    };	
 
-            num_layer_2 {
-        &trans &trans &kp UP &trans &trans          &kp BSLH &kp N7 &kp N8 &kp N9 &kp PLUS
-        &trans &kp LEFT &kp DOWN &kp RIGHT &trans   &kp N0 &kp N4 &kp N5 &kp N6 &kp MINUS
-        &trans &trans &trans &trans &trans          &kp DOT &kp N1 &kp N2 &kp N3 &kp STAR
-                            &to 0 &to 0             &to 0 &to 0
-        };
+        num_layer_2 {
+    bindings = <
+    &trans &trans &kp UP &trans &trans          &kp BSLH &kp N7 &kp N8 &kp N9 &kp PLUS
+    &trans &kp LEFT &kp DOWN &kp RIGHT &trans   &kp N0 &kp N4 &kp N5 &kp N6 &kp MINUS
+    &trans &trans &trans &trans &trans          &kp DOT &kp N1 &kp N2 &kp N3 &kp STAR
+                        &to 0 &to 0             &to 0 &to 0
+    >;
+    };
 
-            bt_layer_3 {
-        &trans &trans &trans &trans &bt BT_CLR      &trans &trans &trans &trans &trans
-        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &trans  &trans &trans &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                            &to 0 &to 0             &to 0 &to 0
-        };
+        bt_layer_3 {
+    bindings = <
+    &trans &trans &trans &trans &bt BT_CLR      &trans &trans &trans &trans &trans
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &trans  &trans &trans &trans &trans
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                        &to 0 &to 0             &to 0 &to 0
+    >;
+    };
         
 	};
 };
