@@ -82,10 +82,10 @@
             
         default_layer_0 {
     bindings = <
-    &kp J &kp G &kp M &kp P &kp V 						&hm - = &hm ? / &hm . ! &hm _ , &hm " ' 
-    &kp R &hm LGUI S &hm LCTRL N &hm LALT D &kp B 	    &hm : ; &hm RALT A &hm RCTRL E &hm RGUI I &kp H
-    &mt LSFT X &kp F &kp L &kp C &kp W				    &hm $ 0 &kp U  &kp O &kp Y &mt LSFT K
-                    &kp LSHIFT &kp T  				&kp SPC &to 1 
+    &kp J &kp G &kp M &kp P &kp V 						&hm MINUS EQUAL &hm QMARK SLASH &hm DOT EXCL &hm UNDER COMMA &hm DQT SQT 
+    &kp R &hm LGUI S &hm LCTRL N &hm LALT D &kp B 	    &hm COLON SEMI &hm RALT A &hm RCTRL E &hm RGUI I &kp H
+    &kp X &kp F &kp L &kp C &kp W				        &hm DLLR N0 &kp U  &kp O &kp Y &kp K
+                    &kp LSHIFT &kp T  				    &kp SPC &to 1 
     >;
     };
 
