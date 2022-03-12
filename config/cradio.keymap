@@ -91,7 +91,7 @@
 
         symbols_layer {
     bindings = <
-    &kp ESC  &kp ATSN   &td LC(LG(LS(N4))) LS(N3) &kp DLLR   &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp PLUS &kp PIPE 
+    &kp ESC  &kp ATSN   &kp LS(N3) &kp DLLR   &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp PLUS &kp PIPE 
     &kp TAB    &kp PLUS    &kp LA(RBKT)      &kp LA(LS(RBKT))   &kp SQT     &kp BSLH &kp LT &kp LPRN  &kp RPRN  &kp GT
     &kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))   &kp DQT 	&to 3 &kp LBKT &kp LBRC &kp RBRC &kp RBKT  
                                                            &to 0  &to 2     &none &to 3 
@@ -100,9 +100,9 @@
 
         num_layer {
     bindings = <
-    &none &none &kp UP &none &none          &kp BSLH &kp N7 &kp N8 &kp N9 &kp PLUS
-    &none &kp LEFT &kp DOWN &kp RIGHT &none   &kp N0 &kp N4 &kp N5 &kp N6 &kp MINUS
-    &none &none &none &none &none          &kp DOT &kp N1 &kp N2 &kp N3 &kp STAR
+    &none &none &kp UP &none &none              &kp BSLH &kp N7 &kp N8 &kp N9 &kp PLUS
+    &none &kp LEFT &kp DOWN &kp RIGHT &none     &kp N0 &kp N4 &kp N5 &kp N6 &kp MINUS
+    &none &none &none &none &none               &kp DOT &kp N1 &kp N2 &kp N3 &kp STAR
                         &to 0 &to 0             &to 0 &to 0
     >;
     };
