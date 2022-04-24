@@ -26,7 +26,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
+        
+        ls: layer_switches {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_SWITCHES";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&mo>, <&to>;
+            //&ls HOLD TAP
+        }; 
     };
 
     combos {
@@ -75,44 +84,56 @@
  
     };
 
-
-
     keymap {
             compatible = "zmk,keymap";
             
         default_layer {
     bindings = <
-    &kp J &kp G &kp M &kp P &kp V 						    &hm MINUS EQUAL &hm QMARK SLASH &hm EXCL DOT &hm UNDER COMMA &hm DQT SQT 
-    &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT D &kp B 	&hm COLON SEMI &hm RSHFT A &hm RCTRL E &hm RALT I &hm RGUI H
-    &kp X &kp F &kp L &kp C &kp W				            &hm DLLR N0 &kp U  &kp O &kp Y &kp K
-                    &kp LSHIFT &kp T  				        &kp SPC &to 1 
+        &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp SQT 
+    &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
+    &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
+                    &ls 2 2   &ls 1 1	        	        &kp SPC   &ls 3 3 
     >;
     };
 
-        symbols_layer {
+        cap_layer {
     bindings = <
-    &kp ESC  &kp ATSN   &kp LS(N3) &kp DLLR   &kp PRCNT		&kp CARET &kp AMPS &kp STAR &kp PLUS &kp PIPE 
-    &kp TAB    &kp PLUS    &kp LA(RBKT)      &kp LA(LS(RBKT))   &kp SQT     &kp BSLH &kp LT &kp LPRN  &kp RPRN  &kp GT
-    &kp TILDE    &kp LA(N3) 	&kp LA(LBKT) &kp LA(LS(LBKT))   &kp DQT 	&to 3 &kp LBKT &kp LBRC &kp RBRC &kp RBKT  
-                                                           &to 0  &to 2     &none &to 3 
+    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)
+                                                            &kp PLUS &kp COLON &kp MINUS &kp UNDER &kp DQT 
+    &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)
+                                                            &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
+    &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)
+                                                            &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
+                    &to 0      &to 3  				        &kp SPC &to 1 
+    >;
+    };
+
+        symbol_layer {
+    bindings = <
+    &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                   &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
+    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE
+                                        &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RLAT RPRN  &hm RGUI RBKT
+    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	            &kp SEMI &kp LT &kp LBRC &kp RBRC &kp GT  
+                                            &to 0  &to 0            &kp SPC &to 2 
     >;
     };	
 
-        num_layer {
+        num_nav_layer {
     bindings = <
-    &none &none &kp UP &none &none              &kp BSLH &kp N7 &kp N8 &kp N9 &kp PLUS
-    &none &kp LEFT &kp DOWN &kp RIGHT &none     &kp N0 &kp N4 &kp N5 &hm RGUI N6 &kp MINUS
-    &none &none &none &none &none               &kp DOT &kp N1 &kp N2 &kp N3 &kp STAR
-                        &to 0 &to 0             &kp RGUI &to 0
+    &to 4 &none &kp UP &none &none              &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
+    &hm LGUI LGUI &hm LALT LEFT &hm LCTRL DOWN &hm LSHFT RIGHT &none
+                                                &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI PLUS
+    &kp H &kp K &kp J &kp L &none               &kp COMMA   &kp N1 &kp N2 &kp N3 &kp STAR
+                        &to 0 &kp LSHFT         &kp N0 &to 3
     >;
     };
 
         bt_layer {
     bindings = <
-    &none &none &none &none &bt BT_CLR      &none &none &none &none &none
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4   &none  &none &none &none &none
-    &none &none &none &none &none &none &none &none &none &none
-                        &to 0 &to 0             &to 0 &to 0
+    &none &none &none &none &bt BT_CLR                                      &none &none &none &none &none
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4     &none &none &none &none &none
+    &none &none &none &none &none                                           &none &none &none &none &none
+                        &to 0 &to 0                                         &to 0 &to 4
     >;
     };
         
