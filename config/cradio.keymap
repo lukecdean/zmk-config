@@ -108,7 +108,7 @@
         symbol_layer {
     bindings = <
     &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
-    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RLAT RPRN  &hm RGUI RBKT
+    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RALT RPRN  &hm RGUI RBKT
     &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &kp SEMI &kp LT &kp LBRC &kp RBRC &kp GT  
                                             &to 0  &to 0                    &kp SPC &to 2 
     >;
