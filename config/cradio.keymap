@@ -89,7 +89,7 @@
             
         default_layer {
     bindings = <
-        &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp SQT 
+    &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp SQT 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
                     &ls 2 2   &ls 1 1	        	        &kp SPC   &ls 3 3 
@@ -98,33 +98,28 @@
 
         cap_layer {
     bindings = <
-    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)
-                                                            &kp PLUS &kp COLON &kp MINUS &kp UNDER &kp DQT 
-    &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)
-                                                            &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
-    &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)
-                                                            &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
-                    &to 0      &to 3  				        &kp SPC &to 1 
+    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &kp DQT 
+    &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)     &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
+    &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)                           &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
+                    &to 0      &to 3  				                            &kp SPC &to 1 
     >;
     };
 
         symbol_layer {
     bindings = <
-    &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                   &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
-    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE
-                                        &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RLAT RPRN  &hm RGUI RBKT
-    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	            &kp SEMI &kp LT &kp LBRC &kp RBRC &kp GT  
-                                            &to 0  &to 0            &kp SPC &to 2 
+    &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
+    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RLAT RPRN  &hm RGUI RBKT
+    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &kp SEMI &kp LT &kp LBRC &kp RBRC &kp GT  
+                                            &to 0  &to 0                    &kp SPC &to 2 
     >;
     };	
 
         num_nav_layer {
     bindings = <
-    &to 4 &none &kp UP &none &none              &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
-    &hm LGUI LGUI &hm LALT LEFT &hm LCTRL DOWN &hm LSHFT RIGHT &none
-                                                &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI PLUS
-    &kp H &kp K &kp J &kp L &none               &kp COMMA   &kp N1 &kp N2 &kp N3 &kp STAR
-                        &to 0 &kp LSHFT         &kp N0 &to 3
+    &to 4 &none &kp UP &none &none                                          &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
+    &hm LGUI LGUI &hm LALT LEFT &hm LCTRL DOWN &hm LSHFT RIGHT &none        &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI PLUS
+    &kp H &kp K &kp J &kp L &none                                           &kp COMMA   &kp N1 &kp N2 &kp N3 &kp STAR
+                        &to 0 &kp LSHFT                                     &kp N0 &to 3
     >;
     };
 
