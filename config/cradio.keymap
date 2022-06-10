@@ -96,7 +96,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp SQT 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &kp SPC   &ls 2 2	        	        &sls 1 SPC   &ls 3 3 
+                    &kp SPC   &to 2  	        	        &sls 1 SPC   &to 3 
     >;
     };
 
