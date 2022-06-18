@@ -63,13 +63,13 @@
         };
                
         combo_backspace {
-            timeout-ms = <150>;
+            timeout-ms = <30>;
             key-positions = <21 22>;
             bindings = <&kp BSPC>;
         };
        
         combo_delete {
-            timeout-ms = <150>;
+            timeout-ms = <30>;
             key-positions = <22 23>;
             bindings = <&kp DEL>;
         };
