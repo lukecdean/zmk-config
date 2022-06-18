@@ -52,7 +52,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <150>;
-            key-positions = <21 22>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
         
@@ -64,13 +64,13 @@
                
         combo_backspace {
             timeout-ms = <150>;
-            key-positions = <7 8>;
+            key-positions = <21 22>;
             bindings = <&kp BSPC>;
         };
        
         combo_delete {
             timeout-ms = <150>;
-            key-positions = <8 9>;
+            key-positions = <22 23>;
             bindings = <&kp DEL>;
         };
 
@@ -96,7 +96,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp SQT 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &kp SPC   &mo 2  	        	        &kp SPC   &to 3 
+                    &kp SPC   &sl 2  	        	        &kp SPC   &to 3 
     >;
     };
 
