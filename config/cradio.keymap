@@ -52,7 +52,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <20>;
-            key-positions = <1 2>;
+            key-positions = <21 22>;
             bindings = <&kp ESC>;
         };
         
@@ -62,7 +62,7 @@
             bindings = <&kp TAB>;
         };
                
-        combo_backspace {
+        combo_quote {
             timeout-ms = <20>;
             key-positions = <21 22>;
             bindings = <&kp QT>;
@@ -70,7 +70,7 @@
        
         combo_delete {
             timeout-ms = <20>;
-            key-positions = <22 23>;
+            key-positions = <8 9>;
             bindings = <&kp DEL>;
         };
 
