@@ -65,7 +65,7 @@
         combo_quote {
             timeout-ms = <20>;
             key-positions = <21 22>;
-            bindings = <&kp QT>;
+            bindings = <&kp SQT>;
         };
        
         combo_delete {
