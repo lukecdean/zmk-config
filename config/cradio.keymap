@@ -96,7 +96,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &kp SPC   &sl 2  	        	        &kp SPC   &to 3 
+                    &kp SPC   &sl 2  	        	        &kp SPC   &sl 3 
     >;
     };
 
@@ -120,7 +120,7 @@
 
         num_nav_layer {
     bindings = <
-    &none &none &kp UP &none &to 4                                          &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
+    &kp F4 &none &kp UP &none &to 4                                          &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
     &hm LGUI LGUI &kp LEFT &kp DOWN &kp RIGHT &none        &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI PLUS
     &kp H &kp K &kp J &kp L &none                                           &kp COMMA   &kp N1 &kp N2 &kp N3 &kp STAR
                         &to 0 &to 0                                         &kp N0 &to 3
