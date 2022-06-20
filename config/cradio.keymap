@@ -46,6 +46,14 @@
             bindings = <&mo>, <&kp>;
             //&ls HOLD TAP
         }; 
+
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&sl 3>, <&to 3>;
+       };
     };
 
     combos {
@@ -96,7 +104,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &kp SPC   &sl 2  	        	        &kp SPC   &sl 3 
+                    &kp SPC   &sl 2  	        	        &kp SPC   &td0 
     >;
     };
 
