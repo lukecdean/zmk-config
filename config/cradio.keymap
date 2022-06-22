@@ -58,6 +58,12 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_home_layer {
+            timeout-ms = <250>;
+            key-positions = <30 33>;
+            bindings = <&to 0>;
+        };
+
         combo_esc {
             timeout-ms = <20>;
             key-positions = <21 22>;
@@ -104,7 +110,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &kp SPC   &sl 2  	        	        &kp SPC   &td0 
+                    &sl 2   &sl 1  	        	        &kp SPC   &td0 
     >;
     };
 
