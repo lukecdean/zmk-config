@@ -65,7 +65,7 @@
         };
 
         combo_esc {
-            timeout-ms = <20>;
+            timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp ESC>;
         };
@@ -126,8 +126,8 @@
         symbol_layer {
     bindings = <
     &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
-    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBKT &hm RCTRL LPRN  &hm RALT RPRN  &hm RGUI RBKT
-    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &kp SEMI &kp LT &kp LBRC &kp RBRC &kp GT  
+    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBRC &hm RCTRL LPRN  &hm RALT RPRN  &hm RGUI RBRC
+    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &kp SEMI &kp LT &kp LBKT &kp RBKT &kp GT  
                                             &to 0  &to 0                    &kp SPC &to 3 
     >;
     };	
