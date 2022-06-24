@@ -60,7 +60,7 @@
         compatible = "zmk,combos";
         combo_home_layer {
             timeout-ms = <250>;
-            key-positions = <30 33>;
+            key-positions = <31 32>;
             bindings = <&to 0>;
         };
 
@@ -96,8 +96,8 @@
 
         combo_caps_layer {
             timeout-ms = <300>;
-            key-positions = <31 32>;
-            bindings = <&sl 1>;
+            key-positions = <30 33>;
+            bindings = <&to 1>;
         };
 
     };
@@ -134,10 +134,10 @@
 
         num_nav_layer {
     bindings = <
-    &kp F4 &none &kp UP &none &to 4                                          &kp BSLH &kp N7 &kp N8 &kp N9 &kp MINUS
-    &hm LGUI LGUI &kp LEFT &kp DOWN &kp RIGHT &none        &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI PLUS
-    &kp H &kp K &kp J &kp L &none                                           &kp COMMA   &kp N1 &kp N2 &kp N3 &kp STAR
-                        &to 0 &to 0                                         &kp N0 &none
+    &kp F4 &none &kp UP &none &to 4                                          &kp COMMA &kp N7 &kp N8 &kp N9 &kp STAR
+    &hm LGUI LGUI &kp LEFT &kp DOWN &kp RIGHT &none        &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
+    &kp H &kp K &kp J &kp L &none                                           &kp FSLH &kp N1 &kp N2 &kp N3 &kp MINUS
+                        &to 0 &to 0                                         &kp SPC &kp PLUS
     >;
     };
 
