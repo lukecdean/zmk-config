@@ -27,7 +27,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 0 &kp 1>
+                , <&macro_tap &kp N0 &kp N1 &kp N0 &kp N1>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -41,7 +41,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 1 &kp 3>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp N3>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -55,7 +55,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 2 &kp B>
+                , <&macro_tap &kp N0 &kp N1 &kp N2 &kp B>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -69,7 +69,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 4 &kp D>
+                , <&macro_tap &kp N0 &kp N1 &kp N4 &kp D>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -83,7 +83,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 6 &kp B>
+                , <&macro_tap &kp N0 &kp N1 &kp N6 &kp B>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -97,7 +97,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 0 &kp E &kp 1>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp N1>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -111,7 +111,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 0 &kp E &kp 9>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp N9>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -125,7 +125,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 0 &kp E &kp D>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp D>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -139,7 +139,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 0 &kp F &kp 3>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp N3>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -153,7 +153,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 0 &kp F &kp A>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp A>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -167,7 +167,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp C &kp E>
+                , <&macro_tap &kp N0 &kp N1 &kp C &kp E>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -181,7 +181,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp 1 &kp B>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp B>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -195,7 +195,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp D &kp 0>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N0>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -209,7 +209,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp D &kp 2>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N2>
                 , <&macro_tap &kp SPC>
                 ;
         };
@@ -223,7 +223,7 @@
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp 0 &kp 1 &kp D &kp 4>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N4>
                 , <&macro_tap &kp SPC>
                 ;
         };
