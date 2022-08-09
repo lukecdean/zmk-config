@@ -3,6 +3,7 @@
             label = "m_a";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -17,6 +18,7 @@
             label = "m_e";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -31,6 +33,7 @@
             label = "m_i";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -45,6 +48,7 @@
             label = "m_o";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -59,6 +63,7 @@
             label = "m_u";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -73,6 +78,7 @@
             label = "a_a";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -87,6 +93,7 @@
             label = "a_e";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -101,6 +108,7 @@
             label = "a_i";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -115,6 +123,7 @@
             label = "a_o";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -129,6 +138,7 @@
             label = "a_u";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -143,6 +153,7 @@
             label = "m_a_a";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -157,6 +168,7 @@
             label = "m_a_e";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -171,6 +183,7 @@
             label = "m_a_i";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -185,6 +198,7 @@
             label = "m_a_o";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
@@ -199,6 +213,7 @@
             label = "m_a_u";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
                 , <&macro_press &kp LCTRL>
