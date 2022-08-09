@@ -1,7 +1,6 @@
 compatible = "zmk,behavior-macro";
-
 #define MACRO(NAME, UONE, UTWO, UTHREE, UFOUR) \
-    NAME##: NAME { \
+    NAME: NAME { \
         label = "NAME"; \
         #binding-cells = <0>; \
         wait-ms = <1>; \
