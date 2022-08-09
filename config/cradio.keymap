@@ -17,6 +17,7 @@
 / { 
 
     macros {
+        #include "macros.dtsi"
         #include "latin_macros_verbose.dtsi"
     };
 
@@ -204,7 +205,7 @@
     &none &none &none &none &none       &a_u    &a_a    &a_e    &a_o    &a_i
     &none &none &none &none &none       &m_u    &m_a    &m_e    &m_o    &m_i
     &none &none &none &none &none       &m_a_u  &m_a_a  &m_a_e  &m_a_o  &m_a_i
-                        &to 0 &to 0     &to 0 &to 0
+                        &to 0 &to 0     &copy_all &to 0
     >;
     };
 
