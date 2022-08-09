@@ -1,0 +1,211 @@
+
+        m_a: m_a {
+            label = "m_a";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N0 &kp N1>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_e: m_e {
+            label = "m_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp N3>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_i: m_i {
+            label = "m_i";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N2 &kp B>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_o: m_o {
+            label = "m_o";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N4 &kp D>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_u: m_u {
+            label = "m_u";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N6 &kp B>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        a_a: a_a {
+            label = "a_a";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp N1>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        a_e: a_e {
+            label = "a_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp N9>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        a_i: a_i {
+            label = "a_i";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp D>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        a_o: a_o {
+            label = "a_o";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp N3>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        a_u: a_u {
+            label = "a_u";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp A>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_a_a: m_a_a {
+            label = "m_a_a";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp C &kp E>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_a_e: m_a_e {
+            label = "m_a_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp B>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_a_i: m_a_i {
+            label = "m_a_i";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N0>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_a_o: m_a_o {
+            label = "m_a_o";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N2>
+                , <&macro_tap &kp SPC>
+                ;
+        };
+        m_a_u: m_a_u {
+            label = "m_a_u";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp N0 &kp N1 &kp D &kp N4>
+                , <&macro_tap &kp SPC>
+                ;
+        };
