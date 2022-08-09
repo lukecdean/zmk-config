@@ -1,9 +1,9 @@
+compatible = "zmk,behavior-macro"; \
 #define MACRO(NAME, UONE, UTWO, UTHREE, UFOUR) \
-    NAME: NAME { \
+    NAME##: NAME { \
         label = "NAME"; \
-        compatible = "zmk,behavior-macro"; \
         #binding-cells = <0>; \
-        wait-ms = <3>; \
+        wait-ms = <1>; \
         bindings \
             = <&macro_press &kp LSHFT> \
             , <&macro_press &kp LCTRL> \
