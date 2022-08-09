@@ -1,16 +1,16 @@
-#define MACRO(NAME, UONE, UTWO, UTHREE, UFOUR) \
-    NAME##: NAME { \
-        label = "NAME"; \
+#define MACRO(NAME_, UONE_, UTWO_, UTHREE_, UFOUR_) \
+    NAME_##: NAME_ { \
+        label = "NAME_"; \
         compatible = "zmk,behavior-macro"; \
         #binding-cells = <0>; \
-        wait-ms = <1>; \
+        wait-ms = <0>; \
         bindings \
             = <&macro_press &kp LSHFT> \
             , <&macro_press &kp LCTRL> \
             , <&macro_tap &kp U> \
             , <&macro_release &kp LCTRL> \
             , <&macro_release &kp LSHFT> \
-            , <&macro_tap &kp UONE &kp UTWO &kp UTHREE &kp UFOUR> \
+            , <&macro_tap &kp UONE_ &kp UTWO_ &kp UTHREE_ &kp UFOUR_> \
             , <&macro_tap &kp SPC> \
             ; \
     };
@@ -32,4 +32,4 @@ MACRO(m_a_a, N0, N1, C, E)
 MACRO(m_a_e, N0, N1, N1, B)
 MACRO(m_a_i, N0, N1, D, N0)
 MACRO(m_a_o, N0, N1, D, N2)
-MACRO(m_a_u, N0, N1, D, N4)
+MACRO(m_a_u, N0, N1, D, N2)
