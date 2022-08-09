@@ -51,6 +51,16 @@
             //&ls HOLD TAP
         }; 
 
+        asl: alpha_sl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALPHA_SL";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&mo>, <&kp>;
+            //&ls HOLD TAP
+        }; 
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -121,7 +131,7 @@
     bindings = <
     &hm C V &kp G &hsl 3 H &kp P &kp K 						    &kp EQUAL &kp SEMI &hsl 2 DOT &kp COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
-    &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
+    &asl 8 X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
                     &sl 2   &tdl   	        	        &kp SPC   &td0 
     >;
     };
@@ -185,6 +195,15 @@
     &none &none &none &none &none       &none &none &none &none &none
     &none &none &none &none &none       &none &m_a_a &m_a_e &none &m_a_i
     &none &none &none &none &none       &none &m_a_u &m_a_o &none &none
+                        &to 0 &to 0     &to 0 &to 0
+    >;
+    };
+        
+        latin_letters {
+    bindings = <
+    &none &none &none &none &none       &a_u    &a_a    &a_e    &a_o    &a_i
+    &none &none &none &none &none       &m_u    &m_a    &m_e    &m_o    &m_i
+    &none &none &none &none &none       &m_a_u  &m_a_a  &m_a_e  &m_a_o  &m_a_i
                         &to 0 &to 0     &to 0 &to 0
     >;
     };
