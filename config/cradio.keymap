@@ -17,7 +17,7 @@
 / { 
 
     macros {
-        #include "latin_macros_vebose.dtsi"
+        #include "latin_macros_verbose.dtsi"
     };
 
     behaviors {
