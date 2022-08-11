@@ -1,0 +1,37 @@
+/*
+#define MACRO(NAME_, UONE_, UTWO_, UTHREE_, UFOUR_) \
+    NAME_##: NAME_ { \
+        label = "NAME_"; \
+        compatible = "zmk,behavior-macro"; \
+        #binding-cells = <0>; \
+        wait-ms = <0>; \
+        bindings \
+            = <&macro_press &kp LSHFT> \
+            , <&macro_press &kp LCTRL> \
+            , <&macro_tap &kp U> \
+            , <&macro_release &kp LCTRL> \
+            , <&macro_release &kp LSHFT> \
+            , <&macro_tap &kp UONE_ &kp UTWO_ &kp UTHREE_ &kp UFOUR_> \
+            , <&macro_tap &kp SPC> \
+            ; \
+    };
+*/
+
+/* macron vowels */
+ZMK_UNICODE_SINGLE(m_a, N0, N1, N0, N1)
+ZMK_UNICODE_SINGLE(m_e, N0, N1, N1, N3)
+ZMK_UNICODE_SINGLE(m_i, N0, N1, N2, B)
+ZMK_UNICODE_SINGLE(m_o, N0, N1, N4, D)
+ZMK_UNICODE_SINGLE(m_u, N0, N1, N6, B)
+/* accent vowels */
+ZMK_UNICODE_SINGLE(a_a, N0, N0, E, N1)
+ZMK_UNICODE_SINGLE(a_e, N0, N0, E, N9)
+ZMK_UNICODE_SINGLE(a_i, N0, N0, E, D)
+ZMK_UNICODE_SINGLE(a_o, N0, N0, F, N3)
+ZMK_UNICODE_SINGLE(a_u, N0, N0, F, A)
+/* caron vowels */
+ZMK_UNICODE_SINGLE(m_a_a, N0, N1, C, E)
+ZMK_UNICODE_SINGLE(m_a_e, N0, N1, N1, B)
+ZMK_UNICODE_SINGLE(m_a_i, N0, N1, D, N0)
+ZMK_UNICODE_SINGLE(m_a_o, N0, N1, D, N2)
+ZMK_UNICODE_SINGLE(m_a_u, N0, N1, D, N4)
