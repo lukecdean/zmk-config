@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_SL";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <300>;
             bindings = <&sl>, <&kp>;
             //&ls HOLD TAP
@@ -71,15 +71,23 @@
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings = <&sl 3>, <&to 3>;
-       };
+        };
 
-        tdl: tap_dance_latin {
+        td_quote: tap_dance_quote {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LATIN";
+            label = "TAP_DANCE_QUOTE";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <&sl 1>, <&sl 5>, <&sl 6>, <&sl 7>;
-       };
+            tapping-term-ms = <100>;
+            bindings = <&kp SQT>, <&kp DQT>;
+        };
+
+        td_c: tap_dance_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&hm LGUI R>, <&kp C>;
+        };
     };
 
     combos {
@@ -97,26 +105,20 @@
         };
         
          combo_tab {
-            timeout-ms = <150>;
-            key-positions = <26 28>;
+            timeout-ms = <210>;
+            key-positions = <6 8>;
             bindings = <&kp TAB>;
         };
                
-        combo_quote {
-            timeout-ms = <20>;
-            key-positions = <7 8>;
-            bindings = <&kp SQT>;
-        };
-       
         combo_delete {
-            timeout-ms = <20>;
+            timeout-ms = <300>;
             key-positions = <8 9>;
             bindings = <&kp DEL>;
         };
 
         combo_enter {
-            timeout-ms = <60>;
-            key-positions = <27 28>;
+            timeout-ms = <210>;
+            key-positions = <7 8>;
             bindings = <&kp ENTER>;
         };
 
@@ -133,16 +135,16 @@
             
         default_layer {
     bindings = <
-    &hm C V &kp G &hsl 3 H &kp P &kp K 						    &kp EQUAL &kp SEMI &hsl 2 DOT &kp COMMA &kp BSPC 
-    &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
+    &hsl 3 V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &hsl 2 DOT &kp COMMA &kp BSPC 
+    &td_c &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &asl 8 X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &sl 2   &tdl   	        	        &kp SPC   &td0 
+                    &sl 2   &sl 1   	        	        &kp SPC   &td0 
     >;
     };
 
         cap_layer {
     bindings = <
-    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &kp DQT 
+    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &td_quote
     &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)     &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
     &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)                           &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
                     &to 0      &to 0  				                            &kp SPC &to 3 
