@@ -20,8 +20,7 @@
 
     macros {
         #include "macros.dtsi"
-        /* #include "latin_macros_verbose.dtsi" */
-        #include "latin_zmk_macros.dtsi"
+        #include "latin_macros_verbose.dtsi"
     };
 
     behaviors {
