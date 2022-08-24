@@ -74,7 +74,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_QUOTE";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <300>;
             bindings = <&kp SQT>, <&kp DQT>;
         };
 
