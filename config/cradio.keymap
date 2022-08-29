@@ -32,9 +32,9 @@
             bindings = <&kp>, <&kp>;
         };
         
-        fhm: fast_homerow_mods {
+        fht: fast_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "FAST_HOMEROW_MODS";
+            label = "FAST_HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             quick_tap_ms = <0>;
@@ -128,8 +128,8 @@
             key-positions = <30 33>;
             bindings = <&to 1>;
         };
-
     };
+
 
     keymap {
             compatible = "zmk,keymap";
@@ -145,7 +145,7 @@
 
         cap_layer {
     bindings = <
-    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &fhm DQT SQT
+    &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &fht DQT SQT
     &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)     &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
     &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)                           &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
                     &to 0      &to 0  				                            &kp SPC &to 3 
@@ -216,4 +216,5 @@
     };
 
 	};
+
 };
