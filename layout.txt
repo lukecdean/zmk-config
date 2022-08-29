@@ -1,4 +1,5 @@
 HD Elan Luke
+Based on: https://sites.google.com/alanreiser.com/handsdown
 0
     v mo 3  g       h       p       k               =       ;       .       ,       bspc
     r c     s       n       t       f               j       a       e       c       i
