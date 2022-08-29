@@ -46,7 +46,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_LAYER_SWITCH";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&sl>, <&kp>;
@@ -88,22 +88,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings = <&sl 3>, <&to 3>;
-        };
-
-        td_quote: tap_dance_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_QUOTE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp SQT>, <&kp DQT>;
-        };
-
-        td_c: tap_dance_c {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_C";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&hm LGUI R>, <&kp C>;
         };
     };
 
