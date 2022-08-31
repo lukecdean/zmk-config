@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <250>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -46,8 +46,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "FAST_LAYER_SWITCH";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick_tap_ms = <0>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <200>;
             flavor = "tap-preferred";
             bindings = <&sl>, <&kp>;
         };
@@ -136,7 +136,7 @@
             
         default_layer {
     bindings = <
-    &fls 3 V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &hsl 2 DOT &kp COMMA &kp BSPC 
+    &fls 3 V &kp G &fls 3 H &kp P &kp K 						    &kp EQUAL &kp SEMI &fls 2 DOT &kp COMMA &fls 2 BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &asl 8 X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
                     &sl 2   &sl 1   	        	        &kp SPC   &td0 
