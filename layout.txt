@@ -21,9 +21,9 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
     h       k       j       l       #               /       1       2       3       -
                             to 0    to 0            spc     +
 4
-    #       #       #       #       #               BT_CLR  #       #       #       #
-    BT_0    BT_1    BT_2    BT_3    BT_4            #       #       #       #       #
-    #       #       #       #       #               #       #       #       #       #
+    #       #       #       #       bootloader      #       #       #       #       BT_CLR
+    #       #       #       #       #               #       #       #       #       BT_0
+    #       #       #       #       #               #       BT_1    BT_2    BT_3    #
                             to 0    to 0            to 0    to 4
 
 /*                KEY POSITIONS
