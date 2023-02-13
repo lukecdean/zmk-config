@@ -34,10 +34,10 @@ NUM
     -       3       2       1       /
                             to 0    .               spc     #
 BLE
-    #       #       #       #       #               BLE     #       #       #       BT_CLR
+    #       #       #       #       #               BLE     #       #       #       #
     #       #       #       #       #               TOG     #       #       #       BT_0
-    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    #
-                            to 0    to 0            to 0    to 4
+    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    BT_CLR
+                            to 0    to 0            to 0    to 0
 
 
 

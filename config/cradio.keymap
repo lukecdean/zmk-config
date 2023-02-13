@@ -78,7 +78,6 @@
             key-positions = <30 33>;
             bindings = <&to 1>;
         };
-
     };
 
     keymap {
@@ -89,7 +88,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &sl 2   &sl 1                           &ls 1 SPC &td0 
+                    &sl 2   &sl 1                           &sl 1 SPC &td0 
     >;
     };
 
