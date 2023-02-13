@@ -1,12 +1,57 @@
 HD Elan Luke
 Based on: https://sites.google.com/alanreiser.com/handsdown
+
+// testing
+
+DEF
+    v       g       h       p       k               =       ;       .       ,       bspc
+    r       s       n       t       f               j       a       e       c       i
+    x       m       l       d       b               /       u       o       w       y
+                            to 0    SFT             spc     to 0
+SFT
+    V       G       H       P       K               +       :       -       _       '
+    R       S       N       T       F               J       A       E       C       I
+    X       M       L       D       B               ?       U       O       W       Y
+                            to 0    to 0            spc     to 0
+SM1
+    !       @       #       $       x
+    ~       z       q       \       |
+    `       Z       Q       0       x
+                            to 0    to 0            spc     to 0
+SM2
+    *       &       ^       %       "
+    {       (       )       }       ;
+    <       [       ]       >       #
+                            to 0    left            spc     to 0
+NAV
+    F4      #       up      #       #
+    #       left    down    right   #
+    h       k       j       l       #
+                            to 0    to 0            spc     to 0
+NUM
+    +       9       8       7       *
+    0       6       5       4       ,
+    -       3       2       1       /
+                            to 0    .               spc     #
+BLE
+    #       #       #       #       #               BLE     #       #       #       BT_CLR
+    #       #       #       #       #               TOG     #       #       #       BT_0
+    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    #
+                            to 0    to 0            to 0    to 4
+
+
+
+
+
+
+
 0
-    v mo 3  g       h       p       k               =       ;       .       ,       bspc
-    r c     s       n       t       f               j       a       e       c       i
+    v       g       h       p       k               =       ;       .       ,       bspc
+    r       s       n       t       f               j       a       e       c       i
     x       m       l       d       b               /       u       o       w       y
                             sl 2    sl 1            spc     ls 3
 1
-    V       G       H       P       K               +       :       -       _       ' "
+    V       G       H       P       K               +       :       -       _       '
     R       S       N       T       F               J       A       E       C       I
     X       M       L       D       B               ?       U       O       W       Y
                             to 0    to 0            spc     to 3
@@ -21,9 +66,9 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
     h       k       j       l       #               /       1       2       3       -
                             to 0    to 0            spc     +
 4
-    #       #       #       #       bootloader      #       #       #       #       BT_CLR
-    #       #       #       #       #               #       #       #       #       BT_0
-    #       #       #       #       #               #       BT_1    BT_2    BT_3    #
+    #       #       #       #       #               BLE     #       #       #       BT_CLR
+    #       #       #       #       #               TOG     #       #       #       BT_0
+    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    #
                             to 0    to 0            to 0    to 4
 
 /*                KEY POSITIONS
@@ -45,9 +90,10 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
 
  21 22 : esc
  
- 31 32 : to 0
- 30 33 : to 1
+ 31 32 : to DEF
+ 30 33 : to SFT
 
+ 20 9 : to BLE // TODO
 
 
 x
