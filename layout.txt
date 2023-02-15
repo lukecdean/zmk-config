@@ -3,11 +3,11 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
 
 // testing
 
-DEF
+DEF                                                         SM2     NAV     SM1     NUM 
     v       g       h       p       k               =       ;       .       ,       bspc
     r       s       n       t       f               j       a       e       c       i
     x       m       l       d       b               /       u       o       w       y
-                            to 0    SFT             spc     to 0
+                            to NNV  sl SFT          spc     to 0
 SFT
     V       G       H       P       K               +       :       -       _       '
     R       S       N       T       F               J       A       E       C       I
@@ -33,6 +33,11 @@ NUM
     0       6       5       4       ,
     -       3       2       1       /
                             to 0    .               spc     #
+NNV
+    F4      #       up      #       to 4            *       7       8       9       +
+    #       left    down    right   #               ,       4       5       6       0
+    h       k       j       l       #               /       1       2       3       -
+                            to 0    to 0            spc     .
 BLE
     #       #       #       #       #               BLE     #       #       #       #
     #       #       #       #       #               TOG     #       #       #       BT_0

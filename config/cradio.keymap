@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#DEFINE _DEF 0
+#DEFINE _SFT 1
+#DEFINE _SM1 2
+#DEFINE _SM2 3
+#DEFINE _NAV 4
+#DEFINE _NUM 5
+#DEFINE _NNV 6
+#DEFINE _BLE 7
+
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
@@ -17,6 +26,15 @@
 / { 
 
     macros {
+        dd: dd {
+            label = "direction_default";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_tap &kp>
+                , <&macro_tap &to _DEF>
+                ;
+        };
     };
 
     behaviors {
@@ -25,7 +43,7 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <210>;
-            quick_tap_ms = <0>;
+            quick_tap_ms = <300>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -35,7 +53,7 @@
             label = "LAYER_ACCESS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
-            quick_tap_ms = <0>;
+            quick_tap_ms = <600>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
         };
@@ -43,10 +61,11 @@
 
     combos {
         compatible = "zmk,combos";
+
         combo_home_layer {
             timeout-ms = <250>;
             key-positions = <31 32>;
-            bindings = <&to 0>;
+            bindings = <&to _DEF>;
         };
 
         combo_esc {
@@ -76,37 +95,52 @@
         combo_caps_layer {
             timeout-ms = <300>;
             key-positions = <30 33>;
-            bindings = <&to 1>;
+            bindings = <&to _SFT>;
+        };
+
+        combo_ble_layer {
+            timeout-ms = <300>;
+            key-positions = <20 9>;
+            bindings = <&to _BLE>;
         };
     };
 
     keymap {
             compatible = "zmk,keymap";
             
-        default_layer {
+        def {
     bindings = <
-    &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &kp SEMI &kp DOT &kp COMMA &kp BSPC 
+    &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &la _SM2 SEMI &la _NAV DOT &la _SM1 COMMA &la _NUM BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &sl 2   &sl 1                           &sl 1 SPC &td0 
+                    &to _NNV   &sl _SFT                           &kp SPC &to 0 
     >;
     };
 
-        cap_layer {
+        sft {
     bindings = <
     &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp PLUS &kp COLON &kp MINUS &kp UNDER &kp SQT
     &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)     &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I)
     &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)                           &kp QMARK &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y)
-                    &to 0      &to 0  				                            &kp SPC &to 3 
+                    &to 0      &to 0  				                            &kp SPC &to 0 
     >;
     };
 
-        symbol_layer {
+        sm1 {
     bindings = <
-    &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &kp PRCNT  &kp CARET &kp AMPS &kp STAR
-    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &kp LEFT &hm RSHFT LBRC &hm RCTRL LPRN  &hm RALT RPRN  &hm RGUI RBRC
-    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &kp SEMI &kp LT &kp LBKT &kp RBKT &kp GT  
-                                            &to 0  &to 0                    &kp SPC &to 3 
+    &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &none &none &none &none
+    &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &none &none &none &none &none
+    &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &none &none &none &none &none
+                                            &to 0  &to 0                    &kp SPC &to 0 
+    >;
+    };	
+
+        sm2 {
+    bindings = <
+    &kp STAR  &kp AMPS  &kp CARET  &kp PRCNT  &kp DQT                           &none &none &none &none &none
+    &hm LGUI LBRC  &hm LALT LPAR  &hm LCTRL RPAR  &hm LSHFT RBRC  &kp SEMI       &none &none &none &none &none
+    &kp LT  &kp LBKT  &kp RBKT  &kp GT  &none  	                    &none &none &none &none &none
+                                            &to 0  &kp LEFT                    &kp SPC &to 0 
     >;
     };	
 
