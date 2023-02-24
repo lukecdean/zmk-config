@@ -35,6 +35,17 @@
                 , <&macro_tap &to _DEF>
                 ;
         };
+
+        af4: af4 {
+            label = "alt_f_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp F4>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 
     behaviors {
@@ -113,7 +124,7 @@
     &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &la _SM2 SEMI &la _NAV DOT &la _SM1 COMMA &la _NUM BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &to _NNV   &sl _SFT                           &kp SPC &to 0 
+                    &to _NNV   &sl _SFT                     &kp SPC &to 0 
     >;
     };
 
@@ -138,27 +149,45 @@
         sm2 {
     bindings = <
     &kp STAR  &kp AMPS  &kp CARET  &kp PRCNT  &kp DQT                           &none &none &none &none &none
-    &hm LGUI LBRC  &hm LALT LPAR  &hm LCTRL RPAR  &hm LSHFT RBRC  &kp SEMI       &none &none &none &none &none
-    &kp LT  &kp LBKT  &kp RBKT  &kp GT  &none  	                    &none &none &none &none &none
-                                            &to 0  &kp LEFT                    &kp SPC &to 0 
+    &hm LGUI LBRC  &hm LALT LPAR  &hm LCTRL RPAR  &hm LSHFT RBRC  &kp SEMI      &none &none &none &none &none
+    &kp LT  &kp LBKT  &kp RBKT  &kp GT  &none  	                                &none &none &none &none &none
+                                            &to 0  &kp LEFT                     &kp SPC &to 0 
     >;
     };	
 
-        num_nav_layer {
+        nav {
     bindings = <
-    &none &none &kp UP &none &to 4                                          &kp COMMA &kp N7 &kp N8 &kp N9 &kp STAR
-    &hm LGUI LGUI &kp LEFT &kp DOWN &kp RIGHT &none        &kp DOT &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
-    &kp H &kp K &kp J &kp L &kp F4                                           &kp FSLH &kp N1 &kp N2 &kp N3 &kp MINUS
-                        &to 0 &to 0                                         &kp SPC &kp PLUS
+    &none &none &kp UP &none &to 4                          &none &none &none &none &none 
+    &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &none              &none &none &none &none &none 
+    &kp H &kp K &kp J &kp L &af4                            &none &none &none &none &none 
+                        &to 0 &to 0                         &kp SPC &to 0
     >;
     };
 
-        bt_layer {
+        num {
     bindings = <
-    &none &none &none &none &none           &out OUT_BLE        &none          &none         &none         &bt BT_CLR
-    &none &none &none &none &none           &out OUT_TOG        &none          &none         &none         &bt BT_SEL 0
-    &none &none &none &none &bootloader     &out OUT_USB        &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &none
-                        &to 0 &to 0         &to 0 &to 0
+    &kp PLUS  &kp N9 &kp N8 &kp N7 &kp STAR         &none &none &none &none &none
+    &kp N0    &kp N6 &kp N5 &kp N4 &kp COMMA        &none &none &none &none &none
+    &kp MINUS &kp N3 &kp N2 &kp N1 &kp FSLH         &none &none &none &none &none
+        &to 0 &kp DOT                               &kp SPC &to 0
+    >;
+    };
+
+        nnv {
+    bindings = <
+    &none &none &dd UP &none &to 4                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS
+    &kp LGUI &dd LEFT &dd DOWN &dd RIGHT &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
+    &kp H &kp K &kp J &kp L &af4                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
+                        &to 0 &to 0                         &kp SPC &kp DOT
+    >;
+    };
+
+        ble {
+    bindings = <
+    &bt BT_CLEAR &OUT OUT_BLE &OUT OUT_TOG &OUT OUT_USB &none           &none &none &none &none &none 
+    &bt BT_SEL 0 &none &none &none &none                                &none &none &none &none &none 
+    &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bootloader            &none &none &none &none &none 
+                        &to 0 &to 0                                     &to 0 &to 0
     >;
     };
 

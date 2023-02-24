@@ -4,10 +4,10 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
 // testing
 
 DEF                                                         SM2     NAV     SM1     NUM 
-    v       g       h       p       k               =       ;       .       ,       bspc
+    v NNV   g       h       p       k               =       ;       .       ,       bspc
     r       s       n       t       f               j       a       e       c       i
     x       m       l       d       b               /       u       o       w       y
-                            to NNV  sl SFT          spc     to 0
+                            to NNV  sl SFT          spc     sl SFT
 SFT
     V       G       H       P       K               +       :       -       _       '
     R       S       N       T       F               J       A       E       C       I
@@ -24,24 +24,24 @@ SM2
     <       [       ]       >       #
                             to 0    left            spc     to 0
 NAV
-    F4      #       up      #       #
+    #       #       up      #       #
     #       left    down    right   #
-    h       k       j       l       #
+    h       k       j       l       altF4
                             to 0    to 0            spc     to 0
 NUM
     +       9       8       7       *
     0       6       5       4       ,
     -       3       2       1       /
-                            to 0    .               spc     #
+                            to 0    .               spc     to 0
 NNV
-    F4      #       up      #       to 4            *       7       8       9       +
+    #       #       up      #       to 4            *       7       8       9       +
     #       left    down    right   #               ,       4       5       6       0
-    h       k       j       l       #               /       1       2       3       -
+    #       #       #       #       altF4           /       1       2       3       -
                             to 0    to 0            spc     .
 BLE
-    #       #       #       #       #               BLE     #       #       #       #
-    #       #       #       #       #               TOG     #       #       #       BT_0
-    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    BT_CLR
+    BT_CLR  BLE     TOG     USB     #               #       #       #       #       #
+    BT_0    #       #       #       #               #       #       #       #       #
+    #       BT_3    BT_2    BT_1    bootloader      #       #       #       #       #
                             to 0    to 0            to 0    to 0
 
 
