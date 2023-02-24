@@ -9,14 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#DEFINE _DEF 0
-#DEFINE _SFT 1
-#DEFINE _SM1 2
-#DEFINE _SM2 3
-#DEFINE _NAV 4
-#DEFINE _NUM 5
-#DEFINE _NNV 6
-#DEFINE _BLE 7
+#define _DEF 0
+#define _SFT 1
+#define _SM1 2
+#define _SM2 3
+#define _NAV 4
+#define _NUM 5
+#define _NNV 6
+#define _BLE 7
 
 &mt {
   //  flavor = "tap-preferred";
