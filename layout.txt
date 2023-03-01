@@ -3,11 +3,11 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
 
 // testing
 
-DEF                                                         SM2     NAV     SM1     NUM 
-    v NNV   g       h       p       k               =       ;       .       ,       bspc
+DEF ANV             NNV                                     SM2     NNV     SM1      
+    v       g       h       p       k               =       ;       .       ,       bspc
     r       s       n       t       f               j       a       e       c       i
-    x       m       l       d       b               /       u       o       w       y
-                            to NNV  sl SFT          spc     sl SFT
+    x       m       l       d       b               /       u       o       w       y mo SFT
+                            to ANV  sl SFT          spc     sl SFT
 SFT
     V       G       H       P       K               +       :       -       _       '
     R       S       N       T       F               J       A       E       C       I
@@ -29,10 +29,10 @@ NAV
     h       k       j       l       altF4
                             to 0    to 0            spc     to 0
 NUM
-    +       9       8       7       *
-    0       6       5       4       ,
-    -       3       2       1       /
-                            to 0    .               spc     to 0
+    #       #       up      #       #               *       7       8       9       +
+    #       left    down    right   #               ,       4       5       6       0
+    #       #       #       #       altF4           /       1       2       3       -
+                            to 0    to 0            spc     .
 NNV
     #       #       up      #       to 4            *       7       8       9       +
     #       left    down    right   #               ,       4       5       6       0
@@ -75,6 +75,11 @@ BLE
     #       #       #       #       #               TOG     #       #       #       BT_0
     #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    #
                             to 0    to 0            to 0    to 4
+NUM
+    +       9       8       7       *
+    0       6       5       4       ,
+    -       3       2       1       /
+                            to 0    .               spc     to 0
 
 /*                KEY POSITIONS
 

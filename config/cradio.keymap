@@ -13,10 +13,12 @@
 #define _SFT 1
 #define _SM1 2
 #define _SM2 3
-#define _NAV 4
-#define _NUM 5
-#define _NNV 6
-#define _BLE 7
+#define _NNV 4
+#define _ANV 5
+#define _BLE 6
+
+#define _L_KEYS 0,1,2,3,4,10,11,12,13,14,20,21,22,23,24
+#define _R_KEYS 5,6,7,8,9,15,16,17,18,19,25,26,27,28,29
 
 
 / { 
@@ -94,6 +96,28 @@
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
         };
+
+        la_l: layer_access {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <600>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <_L_KEYS>;
+        };
+
+        la_r: layer_access {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <600>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <_R_KEYS>;
+        };
     };
 
     combos {
@@ -147,10 +171,10 @@
             
         def {
     bindings = <
-    &kp V &kp G &kp H &kp P &kp K 						    &kp EQUAL &la _SM2 SEMI &la _NAV DOT &la _SM1 COMMA &la _NUM BSPC 
+    &la_l _ANV V &kp G &la_l _NNV H &kp P &kp K 			&kp EQUAL &la_r _SM2 SEMI &la_r _NNV DOT &la_r _SM1 COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
-    &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &kp Y
-                    &to _NNV   &sl _SFT                     &kp SPC &to 0 
+    &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
+                    &to _ANV   &sl _SFT                     &kp SPC &sl _SFT 
     >;
     };
 
@@ -181,25 +205,16 @@
     >;
     };	
 
-        nav {
-    bindings = <
-    &none &none &kp UP &none &to 4                          &none &none &none &none &none 
-    &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &none              &none &none &none &none &none 
-    &kp H &kp K &kp J &kp L &af4                            &none &none &none &none &none 
-                        &to 0 &to 0                         &kp SPC &to 0
-    >;
-    };
-
-        num {
-    bindings = <
-    &kp PLUS  &kp N9 &kp N8 &kp N7 &kp STAR         &none &none &none &none &none
-    &kp N0    &kp N6 &kp N5 &kp N4 &kp COMMA        &none &none &none &none &none
-    &kp MINUS &kp N3 &kp N2 &kp N1 &kp FSLH         &none &none &none &none &none
-        &to 0 &kp DOT                               &kp SPC &to 0
-    >;
-    };
-
         nnv {
+    bindings = <
+    &none &none &kp UP &none &none                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS
+    &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
+    &kp H &kp K &kp J &kp L &af4                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
+                        &to 0 &to 0                         &kp SPC &kp DOT
+    >;
+    };
+
+        anv {
     bindings = <
     &none &none &ddu &none &to 4                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS
     &kp LGUI &ddl &ddd &ddr &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
