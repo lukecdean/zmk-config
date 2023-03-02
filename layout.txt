@@ -23,17 +23,12 @@ SM2
     {       (       )       }       ;
     <       [       ]       >       #
                             to 0    left            spc     to 0
-NAV
-    #       #       up      #       #
-    #       left    down    right   #
-    h       k       j       l       altF4
-                            to 0    to 0            spc     to 0
-NUM
+NNV
     #       #       up      #       #               *       7       8       9       +
     #       left    down    right   #               ,       4       5       6       0
     #       #       #       #       altF4           /       1       2       3       -
-                            to 0    to 0            spc     .
-NNV
+                            to 0    bspc            spc     .
+ANV
     #       #       up      #       to 4            *       7       8       9       +
     #       left    down    right   #               ,       4       5       6       0
     #       #       #       #       altF4           /       1       2       3       -
