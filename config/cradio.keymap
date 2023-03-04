@@ -23,7 +23,7 @@
 / { 
     macros {
         ddu: ddu {
-            label = "direction_default";
+            label = "direction_default_u";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -33,7 +33,7 @@
         };
 
         ddd: ddd {
-            label = "direction_default";
+            label = "direction_default_d";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -43,7 +43,7 @@
         };
 
         ddl: ddl {
-            label = "direction_default";
+            label = "direction_default_l";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -53,7 +53,7 @@
         };
 
         ddr: ddr {
-            label = "direction_default";
+            label = "direction_default_r";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -209,17 +209,6 @@
             bindings = <&ctrlz>;
         };
 
-        combo_cszz {
-            timeout-ms = <300>;
-            key-positions = <21 30>;
-            bindings = <&cszz>;
-        };
-
-        combo_cszq {
-            timeout-ms = <300>;
-            key-positions = <22 30>;
-            bindings = <&cszq>;
-        };
     };
 
     keymap {
