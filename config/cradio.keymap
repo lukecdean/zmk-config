@@ -217,7 +217,7 @@
 
         combo_cszq {
             timeout-ms = <300>;
-            key-positions = <21 30>;
+            key-positions = <22 30>;
             bindings = <&cszq>;
         };
     };
