@@ -137,7 +137,7 @@
 
         la_l: layer_access {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_ACCESS";
+            label = "LAYER_ACCESS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick_tap_ms = <600>;
@@ -148,7 +148,7 @@
 
         la_r: layer_access {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_ACCESS";
+            label = "LAYER_ACCESS_RIGHT";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick_tap_ms = <600>;
