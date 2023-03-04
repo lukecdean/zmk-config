@@ -83,6 +83,35 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        cszz: cszz {
+            label = "ctrl_shft_zz";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z>
+                , <&macro_tap &kp Z>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        cszq: cszq {
+            label = "ctrl_shft_zq";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
     };
 
     behaviors {
@@ -174,10 +203,22 @@
             bindings = <&to _BLE>;
         };
 
-        combo_ble_layer {
+        combo_cz {
             timeout-ms = <300>;
             key-positions = <11 30>;
             bindings = <&ctrlz>;
+        };
+
+        combo_cszz {
+            timeout-ms = <300>;
+            key-positions = <21 30>;
+            bindings = <&cszz>;
+        };
+
+        combo_cszq {
+            timeout-ms = <300>;
+            key-positions = <21 30>;
+            bindings = <&cszq>;
         };
     };
 
