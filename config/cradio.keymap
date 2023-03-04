@@ -230,7 +230,7 @@
     bindings = <
     &la_l_anv _ANV V &kp G &la_l _NNV H &kp P &kp K 			&kp EQUAL &la_r _SM2 SEMI &la_r _NNV DOT &la_r _SM1 COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
-    &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
+    &la_l _SFT X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
                     &to _ANV   &sl _SFT                     &kp SPC &sl _SFT 
     >;
     };
@@ -266,7 +266,7 @@
     bindings = <
     &none &none &kp UP &none &none                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS
     &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
-    &kp H &kp K &kp J &kp L &af4                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
+    &kp H &kp K &kp J &kp L &none                           &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
                         &to 0 &kp BSPC                      &kp SPC &kp DOT
     >;
     };
