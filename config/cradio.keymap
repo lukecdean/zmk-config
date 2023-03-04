@@ -146,7 +146,7 @@
             hold-trigger-key-positions = <_R_KEYS>;
         };
 
-        la_l_anv : layer_access_left_anv {
+        la_l_anv: layer_access_left_anv {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_LEFT_ANV";
             #binding-cells = <2>;
