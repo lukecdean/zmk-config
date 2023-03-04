@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp z>
+                , <&macro_tap &kp Z>
                 , <&macro_release &kp LCTRL>
                 ;
         };
@@ -114,7 +114,7 @@
             quick_tap_ms = <600>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <_L_KEYS>;
+            hold-trigger-key-positions = <_R_KEYS>;
         };
 
         la_r: layer_access {
@@ -125,7 +125,7 @@
             quick_tap_ms = <600>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <_R_KEYS>;
+            hold-trigger-key-positions = <_L_KEYS>;
         };
     };
 
