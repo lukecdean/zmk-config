@@ -119,7 +119,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <300>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -129,7 +129,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <1200>;
             quick_tap_ms = <600>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
@@ -139,10 +139,21 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <1200>;
             quick_tap_ms = <300>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <_R_KEYS>;
+        };
+
+        la_l_anv : layer_access_left_anv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS_LEFT_ANV";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <300>;
+            flavor = "balanced";
+            bindings = <&to>, <&kp>;
             hold-trigger-key-positions = <_R_KEYS>;
         };
 
@@ -150,12 +161,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <1200>;
             quick_tap_ms = <300>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <_L_KEYS>;
         };
+
     };
 
     combos {
@@ -216,7 +228,7 @@
             
         def {
     bindings = <
-    &la_l _ANV V &kp G &la_l _NNV H &kp P &kp K 			&kp EQUAL &la_r _SM2 SEMI &la_r _NNV DOT &la_r _SM1 COMMA &kp BSPC 
+    &la_l_anv _ANV V &kp G &la_l _NNV H &kp P &kp K 			&kp EQUAL &la_r _SM2 SEMI &la_r _NNV DOT &la_r _SM1 COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
     &kp X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
                     &to _ANV   &sl _SFT                     &kp SPC &sl _SFT 
