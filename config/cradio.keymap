@@ -275,7 +275,7 @@
     bindings = <
     &none &none &ddu &none &to 4                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS
     &kp LGUI &ddl &ddd &ddr &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0
-    &kp H &kp K &kp J &kp L &af4                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
+    &kp H &kp K &kp J &kp L &none                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS
                         &to 0 &to 0                         &kp SPC &kp DOT
     >;
     };
