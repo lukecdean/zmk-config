@@ -135,18 +135,18 @@
             bindings = <&mo>, <&kp>;
         };
 
-        la_l: layer_access {
+        la_l: layer_access_left {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             quick_tap_ms = <300>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <_R_KEYS>;
         };
 
-        la_r: layer_access {
+        la_r: layer_access_right {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_RIGHT";
             #binding-cells = <2>;
