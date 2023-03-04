@@ -140,7 +140,7 @@
             label = "LAYER_ACCESS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            quick_tap_ms = <-1>;
+            quick_tap_ms = <300>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <_R_KEYS>;
@@ -150,8 +150,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_ACCESS_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick_tap_ms = <-1>;
+            tapping-term-ms = <100>;
+            quick_tap_ms = <300>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
             hold-trigger-key-positions = <_L_KEYS>;
