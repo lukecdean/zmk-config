@@ -183,42 +183,49 @@
             timeout-ms = <50>;
             key-positions = <21 22>;
             bindings = <&kp ESC>;
+            layers = <_DEF>;
         };
         
          combo_tab {
             timeout-ms = <210>;
             key-positions = <6 8>;
             bindings = <&kp TAB>;
+            layers = <_DEF>;
         };
                
         combo_delete {
             timeout-ms = <300>;
             key-positions = <8 9>;
             bindings = <&kp DEL>;
+            layers = <_DEF>;
         };
 
         combo_enter {
             timeout-ms = <210>;
             key-positions = <7 8>;
             bindings = <&kp ENTER>;
+            layers = <_DEF>;
         };
 
         combo_caps_layer {
             timeout-ms = <300>;
             key-positions = <30 33>;
             bindings = <&to _SFT>;
+            layers = <_DEF>;
         };
 
         combo_ble_layer {
             timeout-ms = <300>;
             key-positions = <20 9>;
             bindings = <&to _BLE>;
+            layers = <_DEF>;
         };
 
         combo_cz {
             timeout-ms = <300>;
             key-positions = <11 30>;
             bindings = <&ctrlz>;
+            layers = <_DEF>;
         };
 
     };
