@@ -10,9 +10,9 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
   ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
               ╰────────╯ ╰────────╯            */
 
-// testing
+Keymap 2.0
 
-DEF ANV             NNV                                     SM2     NNV     SM1      
+DEF ANV             NNV                                     SM1     NNV     SM2      
     v       g       h       p       k               =       ;       .       ,       bspc
     r       s       n       t       f               j       a       e       c       i
     x       m       l       d       b               /       u       o       w       y mo SFT
@@ -47,43 +47,13 @@ BLE
     BT_0    #       #       #       #               #       #       #       #       #
     #       BT_3    BT_2    BT_1    bootloader      #       #       #       #       #
                             to 0    to 0            to 0    to 0
+I3W
+    #       #       #       #       #               #       #       #       #       #
+    #       #       #       #       #               #       #       #       #       #
+    #       #       #       #       #               #       #       #       #       #
+                            to 0    #               #       #
 
-
-
-
-
-
-
-0
-    v       g       h       p       k               =       ;       .       ,       bspc
-    r       s       n       t       f               j       a       e       c       i
-    x       m       l       d       b               /       u       o       w       y
-                            sl 2    sl 1            spc     ls 3
-1
-    V       G       H       P       K               +       :       -       _       '
-    R       S       N       T       F               J       A       E       C       I
-    X       M       L       D       B               ?       U       O       W       Y
-                            to 0    to 0            spc     to 3
-2
-    !       @       #       $       x               x       %       ^       &       *
-    ~       z       q       \       |               left    {       (       )       }
-    `       Z       Q       0       x               ;       <       [       ]       >
-                            to 0    to 0            spc     to 3
-3
-    F4      #       up      #       to 4            ,       7       8       9       *
-    #       left    down    right   #               .       4       5       6       0
-    h       k       j       l       #               /       1       2       3       -
-                            to 0    to 0            spc     +
-4
-    #       #       #       #       #               BLE     #       #       #       BT_CLR
-    #       #       #       #       #               TOG     #       #       #       BT_0
-    #       #       #       #       bootloader      USB     BT_1    BT_2    BT_3    #
-                            to 0    to 0            to 0    to 4
-NUM
-    +       9       8       7       *
-    0       6       5       4       ,
-    -       3       2       1       /
-                            to 0    .               spc     to 0
+                       to 0    .               spc     to 0
 
               
  gui alt ctrl shift
