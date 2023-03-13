@@ -340,10 +340,10 @@
 
         i3w {
     bindings = <
-    &none     &kp LS(G) &kp LA(UP) &none &none                  &none &kp RA(N7)       &kp RA(N8)       &kp RA(N9)      &none
-    &kp LA(N0) &kp LA(LEFT) &kp LA(DOWN) &kp LA(RIGHT) &none    &none &hm RSHFT RA(N4) &hm RCTRL RA(N5) &hm RALT RA(N6) &kp RG(N0)
-    &none &kp LA(N3) &kp LA(N2) &kp LA(N1) &none                &none &kp RA(N1)       &kp RA(N2)       &kp RA(N3)      &none
-                    &to 0      &kp LA(D)		                &none &none 
+    &none     &kp LS(G) &kp LA(UP) &none &none                   &none &kp RA(N7)       &kp RA(N8)       &kp RA(N9)      &none
+    &kp LA(N0) &kp LA(LEFT) &kp LA(DOWN) &kp LA(RIGHT) &kp LA(F) &none &hm RSHFT RA(N4) &hm RCTRL RA(N5) &hm RALT RA(N6) &kp RA(N0)
+    &none &kp LA(N3) &kp LA(N2) &kp LA(N1) &none                 &none &kp RA(N1)       &kp RA(N2)       &kp RA(N3)      &none
+                    &to 0      &kp LA(D)		                 &none &none 
     >;
     };
 
