@@ -48,10 +48,10 @@ BLE
     #       BT_3    BT_2    BT_1    bootloader      #       #       #       #       #
                             to 0    to 0            to 0    to 0
 I3W
-    #       #       #       #       #               #       #       #       #       #
-    #       #       #       #       #               #       #       #       #       #
-    #       #       #       #       #               #       #       #       #       #
-                            to 0    #               #       #
+    #       #       up      #       #               #       7       8       9       #
+    0       left    down    right   #               #       4       5       6       0
+    #       3       2       1       #               #       1       2       3       #
+                            to 0    d               #       #
 
                        to 0    .               spc     to 0
 
