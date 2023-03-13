@@ -286,10 +286,10 @@
             
         def {
     bindings = <
-    &la_l_anv _ANV V &kp G &la_l _NNV H &kp P &kp K 			&kp EQUAL &la_r _SM1 SEMI &la_r _NNV DOT &la_r _SM2 COMMA &kp BSPC 
+    &la_l_anv _ANV V &la_l _I3W G &la_l _NNV H &kp P &kp K  &kp EQUAL &la_r _SM1 SEMI &la_r _NNV DOT &la_r _SM2 COMMA &kp BSPC 
     &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I
-    &la_l _SFT X &kp M &kp L &kp D &kp B				            &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
-                    &to _ANV   &skq _SFT                     &kp SPC &sl _I3W
+    &la_l _SFT X &kp M &kp L &kp D &kp B				    &kp FSLH &kp U  &kp O &kp W &la_r _SFT Y
+                    &to _ANV   &skq _SFT                    &kp SPC &sl _I3W
     >;
     };
 

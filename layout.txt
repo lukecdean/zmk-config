@@ -12,11 +12,11 @@ Based on: https://sites.google.com/alanreiser.com/handsdown
 
 Keymap 2.0
 
-DEF ANV             NNV                                     SM1     NNV     SM2      
+DEF ANV     I3W     NNV                                     SM1     NNV     SM2      
     v       g       h       p       k               =       ;       .       ,       bspc
     r       s       n       t       f               j       a       e       c       i
     x       m       l       d       b               /       u       o       w       y mo SFT
-                            to ANV  sl SFT          spc     sl SFT
+                            to ANV  sl SFT          spc     sl I3W
 SFT
     V       G       H       P       K               +       :       -       _       '
     R       S       N       T       F               J       A       E       C       I
