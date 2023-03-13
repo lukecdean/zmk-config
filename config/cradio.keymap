@@ -220,8 +220,6 @@
 
     };
 
-    };
-
     combos {
         compatible = "zmk,combos";
 
