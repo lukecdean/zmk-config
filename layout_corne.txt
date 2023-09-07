@@ -1,0 +1,59 @@
+HD Elan Luke - corne
+Based on: https://sites.google.com/alanreiser.com/handsdown
+
+/*                KEY POSITIONS
+
+  ╭────────────────────────╮ ╭────────────────────────╮
+  │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │
+  │ 12  13  14  15  16  17 │ │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 │ │ 30  31  32  33  34  35 │
+  ╰───────────╮ 36  37  38 │ │ 39  40  41 ╭───────────╯
+              ╰────────────╯ ╰────────────╯            */
+───Combos───
+enter:   8  9
+tab:     7  9
+esc:    26 27
+ctrl-z: 37 14
+BAS:    38 39
+SFT:    37 40
+BLE:    24 35
+
+
+BAS         ANV     I3W     NNV                                     SM1     NNV     SM2      
+    tab     v       g       h       p       k               /       ;       .       ,       bspc        #
+    esc     r       s       n       t       f               j       a       e       c       i           ntr
+    #       x       m       l       d       b               =       u       o       w       y mo SFT    #
+                            #       to ANV  sl SFT          spc     sl I3W
+SFT
+    #       V       G       H       P       K               ?       :       -       _       '       #
+    #       R       S       N       T       F               J       A       E       C       I       #
+    #       X       M       L       D       B               +       U       O       W       Y       #
+                            #       to 0    to 0            spc     to 0    #
+SM1
+    #       !       @       #       $       x
+    #       ~       z       q       \       |
+    #       `       Z       Q       0       x
+                            #       to 0    to 0            spc     to 0    #
+SM2
+    #       *       &       ^       %       "
+    #       {       (       )       }       ;
+    #       <       [       ]       >       #
+                            #       to 0    left            spc     to 0    #
+NNV
+    #       #       #       up      #       #               *       7       8       9       +       #
+    #       #       left    down    right   #               ,       4       5       6       0       #
+    #       #       #       #       #       altF4           /       1       2       3       -       #
+                            #       to 0    bspc            spc     .       #
+ANV
+    #       #       #       up      #       to 4            *       7       8       9       +       #
+    #       #       left    down    right   #               ,       4       5       6       0       #
+    #       #       #       #       #       altF4           /       1       2       3       -       #
+                            #       to 0    to 0            spc     .       #
+BLE
+    #       BT_CLR  BLE     TOG     USB     #               #       #       #       #       #       #
+    #       BT_0    #       #       #       #               #       #       #       #       #       #
+    #       #       BT_3    BT_2    BT_1    bootloader      #       #       #       #       #       #
+                            #       to 0    to 0            to 0    to 0    #
+              
+
+ gui alt ctrl shift

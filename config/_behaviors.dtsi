@@ -1,0 +1,98 @@
+#ifndef HEADER
+#define HEADER
+#include "keymap.h"
+#endif
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick_tap_ms = <300>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        
+        la: layer_access {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <600>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+        };
+
+        la_l: layer_access_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <300>;
+            flavor = "balanced";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <_R_KEYS>;
+        };
+
+        la_l_anv: layer_access_left_anv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS_LEFT_ANV";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <300>;
+            flavor = "balanced";
+            bindings = <&to>, <&kp>;
+            hold-trigger-key-positions = <_R_KEYS>;
+        };
+
+        la_r: layer_access_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_ACCESS_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <300>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <_L_KEYS>;
+        };
+
+        tdasv: tap_dance_append_semicolon_vim {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_APPEND_SEMICOLON_VIM";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMI>, <&asv>;
+        };
+
+        ht_sft: hold_tap_sft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_SFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <1200>;
+            quick_tap_ms = <1200>;
+            flavor = "hold-preferred";
+            bindings = <&sl>, <&to>;
+        };
+
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&sl>;
+        release-after-ms = <1000>;
+        quick-release;
+      };
+
+/*
+      slq: sticky_layer_quick_release {
+        compatible = "zmk,behavior-sticky-layer";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&sl>;
+        release-after-ms = <1000>;
+        quick-release;
+      };
+*/
+
+    };

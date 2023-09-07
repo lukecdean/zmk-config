@@ -1,0 +1,87 @@
+#ifndef HEADER
+#define HEADER
+#include "keymap.h"
+#endif
+
+/ { 
+    #include "_macros.dtsi"
+    #include "_behaviors.dtsi"
+    #include "_combos.dtsi"
+
+    keymap {
+            compatible = "zmk,keymap";
+            
+        bas {
+    bindings = <
+    &kp TAB &la_l_anv _ANV V &la_l _I3W G &la_l _NNV H &kp P &kp K  &kp FSLH &la_r _SM1 SEMI &la_r _NNV DOT &la_r _SM2 COMMA &kp BSPC &kp DEL
+    &kp ESC &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I &kp ENTER
+    &trans &la_l _SFT X &kp M &kp L &kp D &kp B				    &kp EQUAL &kp U  &kp O &kp W &la_r _SFT Y &trans
+                    &trans &to _ANV   &skq _SFT                    &kp SPC &sl _I3W &trans
+    >;
+    };
+
+        sft {
+    bindings = <
+    &trans &kp LS(V) &kp LS(G) &kp LS(H) &kp LS(P) &kp LS(K)                           &kp QMARK &kp COLON &kp MINUS &kp UNDER &kp SQT &trans
+    &trans &hm LGUI LS(R) &hm LALT LS(S) &hm LCTRL LS(N) &hm LSHFT LS(T) &kp LS(F)     &kp LS(J) &hm RSHFT LS(A) &hm RCTRL LS(E) &hm RALT LS(C) &hm RGUI LS(I) &trans
+    &trans &kp LS(X) &kp LS(M) &kp LS(L) &kp LS(D) &kp LS(B)                           &kp PLUS &kp LS(U)  &kp LS(O) &kp LS(W) &kp LS(Y) &trans
+                    &trans &to 0      &to 0  				                            &kp SPC &to 0  &trans
+    >;
+    };
+
+        sm1 {
+    bindings = <
+    &trans &kp EXCL  &kp ATSN  &kp HASH  &kp DLLR  &none                           &none &none &none &none &none &trans
+    &trans &hm LGUI TILDE  &hm LALT Z  &hm LCTRL Q  &hm LSHFT BSLH  &kp PIPE       &none &none &none &none &none &trans
+    &trans &kp GRAVE  &kp LS(Z)  &kp LS(Q)  &kp N0  &none  	                    &none &none &none &none &none &trans
+                                            &trans &to 0  &to 0                    &kp SPC &to 0  &trans
+    >;
+    };	
+
+        sm2 {
+    bindings = <
+    &trans &kp STAR  &kp AMPS  &kp CARET  &kp PRCNT  &kp DQT                           &none &none &none &none &none &trans
+    &trans &hm LGUI LBRC  &hm LALT LPAR  &hm LCTRL RPAR  &hm LSHFT RBRC  &kp SEMI      &none &none &none &none &none &trans
+    &trans &kp LT  &kp LBKT  &kp RBKT  &kp GT  &none  	                                &none &none &none &none &none &trans
+                                            &trans &to 0  &kp LEFT                     &kp SPC &to 0  &trans
+    >;
+    };	
+
+        nnv {
+    bindings = <
+    &trans &none &none &kp UP &none &none                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS &trans
+    &trans &kp LGUI &kp LEFT &kp DOWN &kp RIGHT &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0 &trans
+    &trans &kp H &kp K &kp J &kp L &af4                           &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS &trans
+                        &trans &to 0 &kp BSPC                      &kp SPC &kp DOT &trans
+    >;
+    };
+
+        anv {
+    bindings = <
+    &trans &none &none &ddu &none &to 4                          &kp STAR    &kp N7 &kp N8 &kp N9 &kp PLUS &trans
+    &trans &kp LGUI &ddl &ddd &ddr &none              &kp COMMA   &hm RSHFT N4 &hm RCTRL N5 &hm RALT N6 &hm RGUI N0 &trans
+    &trans &kp H &kp K &kp J &kp L &af4                            &kp FSLH    &kp N1 &kp N2 &kp N3 &kp MINUS &trans
+                        &trans &to 0 &to 0                         &kp SPC &kp DOT &trans
+    >;
+    };
+
+        i3w {
+    bindings = <
+    &none &kp LS(LA(Q)) &kp LA(UP) &none &none                   &none &kp RA(N7)       &kp RA(N8)       &kp RA(N9)      &none
+    &kp LA(N0) &kp LA(LEFT) &kp LA(DOWN) &kp LA(RIGHT) &kp LA(F) &none &hm RSHFT RA(N4) &hm RCTRL RA(N5) &hm RALT RA(N6) &kp RA(N0)
+    &none &kp LA(N3) &kp LA(N2) &kp LA(N1) &none                 &none &kp RA(N1)       &kp RA(N2)       &kp RA(N3)      &none
+                    &to 0      &kp LA(D)		                 &none &none 
+    >;
+    };
+
+        ble {
+    bindings = <
+    &trans &bt BT_CLR &out OUT_BLE &out OUT_TOG &out OUT_USB &none           &none &none &none &none &none  &trans
+    &trans &bt BT_SEL 0 &none &none &none &none                                &none &none &none &none &none  &trans
+    &trans &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bootloader            &none &none &none &none &none  &trans
+                        &trans &to 0 &to 0                                     &to 0 &to 0 &trans
+    >;
+    };
+
+	};
+};
