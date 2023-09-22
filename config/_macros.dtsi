@@ -111,7 +111,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp Q &kp U>;
+                = <&kp Q &kp U>;
         };
 
         qu_cap: qu_cap {
