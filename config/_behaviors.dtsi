@@ -86,7 +86,7 @@
     
     td_qu: qu_tap_dance {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_0";
+        label = "td_qu";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp U>, <&qu>;
@@ -94,7 +94,7 @@
 
     td_qu_cap: qu_cap_tap_dance {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_0";
+        label = "td_qu_cap";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp LS(U)>, <&qu_cap>;
