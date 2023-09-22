@@ -83,8 +83,25 @@
         release-after-ms = <1000>;
         quick-release;
       };
+    
+    td_qu: qu_tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_0";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp U>, <&qu>;
+    };
 
-/*
+    td_qu_cap: qu_cap_tap_dance {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_0";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp U>, <&qu_cap>;
+    };
+
+
+         /*
       slq: sticky_layer_quick_release {
         compatible = "zmk,behavior-sticky-layer";
         label = "STICKY_KEY_QUICK_RELEASE";

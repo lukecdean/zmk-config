@@ -106,4 +106,20 @@
                 ;
         };
 
+        qu: qu {
+            label = "qu";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp Q &kp U &kp K>;
+        };
+
+        qu_cap: qu_cap {
+            label = "qu_cap";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(Q) &kp U &kp K>;
+        };
+
     };
