@@ -100,6 +100,14 @@
         bindings = <&kp LS(U)>, <&qu_cap>;
     };
 
+    td_copy_paste: td_copy_paste {
+        compatible = "zmk,behavior-tap-dance";
+        label = "td_copy_paste";
+        #binding-cells = <0>;
+        tapping-term-ms = <300>;
+        bindings = <&ctrl_v, <&ctrl_c>;
+    };
+
 
          /*
       slq: sticky_layer_quick_release {
@@ -113,3 +121,14 @@
 */
 
     };
+
+/*
+    td: td {
+        compatible = "zmk,behavior-tap-dance";
+        label = "tdlabel";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp A>, <&kp A>;
+    };
+
+*/

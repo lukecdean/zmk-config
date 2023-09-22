@@ -126,4 +126,35 @@
                 ;
         };
 
+        ctrl_c: ctrl_c {
+            label = "ctrl_c";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(C)>
+                ;
+        };
+
+        ctrl_v: ctrl_v {
+            label = "ctrl_v";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(V)>
+                ;
+        };
+
     };
+/*
+        macro: macro {
+            label = "macrolabel";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
+*/
