@@ -16,7 +16,7 @@
     &kp TAB &la_l_anv _ANV V &la_l _I3W G &la_l _NNV H &kp P &kp K  &kp FSLH &la_r _SM1 SEMI &la_r _NNV DOT &la_r _SM2 COMMA &kp BSPC &kp DEL
     &kp ESC &hm LGUI R &hm LALT S &hm LCTRL N &hm LSHFT T &kp F 	&kp J &hm RSHFT A &hm RCTRL E &hm RALT C &hm RGUI I &kp ENTER
     &td_copy_paste &la_l _SFT X &kp M &kp L &kp D &kp B				    &kp EQUAL &td_qu  &kp O &kp W &la_r _SFT Y &trans
-                    &trans &to _ANV   &skq _SFT                    &kp SPC &sl _I3W &trans
+                    &trans &to _ANV   &mt_sft _SFT                    &kp SPC &sl _I3W &trans
     >;
     };
 

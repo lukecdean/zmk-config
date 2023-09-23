@@ -78,11 +78,21 @@
       skq: sticky_key_quick_release {
         compatible = "zmk,behavior-sticky-key";
         label = "STICKY_KEY_QUICK_RELEASE";
-        #binding-cells = <1>;
-        bindings = <&sl>;
         release-after-ms = <1000>;
         quick-release;
+        #binding-cells = <1>;
+        bindings = <&sl>;
       };
+
+    mt_sft: mt_sft {
+         compatible = "zmk,behavior-hold-tap";
+         label = "MT_SHIFT";
+         #binding-cells = <2>;
+         flavor = "hold-preferred";
+         tapping-term-ms = <1024>;
+         quick-tap-ms = <128>;
+         bindings = <&to>, <&sl>;
+    };
     
     td_qu: qu_tap_dance {
         compatible = "zmk,behavior-tap-dance";
