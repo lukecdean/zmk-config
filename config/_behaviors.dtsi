@@ -84,9 +84,13 @@
         bindings = <&sl>;
       };
 
-    sl: sl {
-            tapping-term-ms = <10>;
-};
+      sl_test: sl_test {
+        compatible = "zmk,behavior-sticky-layer";
+        label = "SL_TEST";
+        release-after-ms = <10>;
+        quick-release;
+        #binding-cells = <1>;
+      };
 
     mt_sft: mt_sft {
          compatible = "zmk,behavior-hold-tap";
