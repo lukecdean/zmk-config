@@ -84,6 +84,7 @@
         bindings = <&sl>;
       };
 
+/*
       sl_test: sl_test {
         compatible = "zmk,behavior-sticky-layer";
         label = "SL_TEST";
@@ -91,6 +92,7 @@
         quick-release;
         #binding-cells = <1>;
       };
+*/
 
     mt_sft: mt_sft {
          compatible = "zmk,behavior-hold-tap";
