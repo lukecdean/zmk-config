@@ -81,7 +81,7 @@
         release-after-ms = <1000>;
         quick-release;
         #binding-cells = <1>;
-        bindings = <&sl>;
+        bindings = <&mo>;
       };
 
 /*
@@ -125,7 +125,8 @@
         label = "td_copy_paste";
         #binding-cells = <0>;
         tapping-term-ms = <300>;
-        bindings = <&ctrl_v>, <&ctrl_c>;
+        //bindings = <&ctrl_v>, <&ctrl_c>;
+        bindings = <&k_paste>, <&k_copy>;
     };
 
 
