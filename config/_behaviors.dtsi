@@ -126,7 +126,7 @@
         #binding-cells = <0>;
         tapping-term-ms = <300>;
         //bindings = <&ctrl_v>, <&ctrl_c>;
-        bindings = <&k_paste>, <&k_copy>;
+        bindings = <&kp k_paste>, <&kp k_copy>;
     };
 
 
