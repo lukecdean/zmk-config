@@ -1,0 +1,160 @@
+#ifndef HEADER
+#define HEADER
+#include "keymap.h"
+#endif
+
+    macros {
+        ddu: ddu {
+            label = "direction_default_u";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp UP>
+                , <&macro_tap &to _BAS>
+                ;
+        };
+
+        ddd: ddd {
+            label = "direction_default_d";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DOWN>
+                , <&macro_tap &to _BAS>
+                ;
+        };
+
+        ddl: ddl {
+            label = "direction_default_l";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LEFT>
+                , <&macro_tap &to _BAS>
+                ;
+        };
+
+        ddr: ddr {
+            label = "direction_default_r";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RIGHT>
+                , <&macro_tap &to _BAS>
+                ;
+        };
+
+        af4: af4 {
+            label = "alt_f_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp F4>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        ctrlz: ctrlz {
+            label = "ctrl_z";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp Z>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        cszz: cszz {
+            label = "ctrl_shft_zz";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z>
+                , <&macro_tap &kp Z>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        cszq: cszq {
+            label = "ctrl_shft_zq";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        asv: asv {
+            label = "append_semicolon_vim";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ESC>
+                , <&macro_tap &kp LS(A)>
+                , <&macro_tap &kp SEMI>
+                , <&macro_tap &kp ESC>
+                ;
+        };
+
+        qu: qu {
+            label = "qu";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp Q &kp U>;
+        };
+
+        qu_cap: qu_cap {
+            label = "qu_cap";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp U>
+                ;
+        };
+
+        ctrl_c: ctrl_c {
+            label = "ctrl_c";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(C)>
+                ;
+        };
+
+        ctrl_v: ctrl_v {
+            label = "ctrl_v";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(V)>
+                ;
+        };
+
+    };
+/*
+        macro: macro {
+            label = "macrolabel";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
+*/
