@@ -16,11 +16,11 @@
 #    shield: settings_reset
 ---
 include:
-#  - board: nice_nano_v2
-#    shield: cradio_left
-#  - board: nice_nano_v2
-#    shield: cradio_right
   - board: nice_nano_v2
-    shield: corne_left
+    shield: cradio_left
+  - board: nice_nano_v2
+    shield: cradio_right
+#  - board: nice_nano_v2
+#    shield: corne_left
 #  - board: nice_nano_v2
 #    shield: corne_right
