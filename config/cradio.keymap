@@ -67,12 +67,25 @@
                         &to 0 &to 0                         &kp SPC &kp DOT
     >;
     };
+
         ble {
     bindings = <
     &bt BT_CLR &out OUT_BLE &out OUT_TOG &out OUT_USB &none           &none &none &none &none &none
     &bt BT_SEL 0 &none &none &none &none                                &none &none &none &none &none
     &none &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bootloader            &none &none &none &none &none
                         &to 0 &to 0                                     &to 0 &to 0
+    >;
+    };
+
+        gam {
+    bindings = <
+    &kp V &kp G &kp H &kp P &kp K 
+                                        &kp FSLH &kp SEMI &kp DOT &kp COMMA &kp BSPC 
+    &kp R &kp S &kp N &kp T &kp F
+                                        &kp J &kp A &kp E &kp C &kp I
+    &kp X &kp M &kp L &kp D &kp B
+                                        &kp EQUAL &kp U  &kp O &kp W &kp Y
+                    &to _ANV   &kp LSHFT               &kp SPC &none
     >;
     };
 

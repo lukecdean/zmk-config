@@ -12,6 +12,27 @@
             bindings = <&to _BAS>;
         };
 
+        combo_caps_layer {
+            timeout-ms = <300>;
+            key-positions = <30 33>;
+            bindings = <&to _SFT>;
+            layers = <_BAS>;
+        };
+
+        combo_ble_layer {
+            timeout-ms = <300>;
+            key-positions = <0 33>;
+            bindings = <&to _BLE>;
+            layers = <_BAS>;
+        };
+
+        combo_gam_layer {
+            timeout-ms = <300>;
+            key-positions = <1 33>;
+            bindings = <&to _GAM>;
+            layers = <_BAS>;
+        };
+
         combo_esc {
             timeout-ms = <50>;
             key-positions = <21 22>;
@@ -19,7 +40,7 @@
             layers = <_BAS>;
         };
         
-         combo_tab {
+        combo_tab {
             timeout-ms = <210>;
             key-positions = <6 8>;
             bindings = <&kp TAB>;
@@ -37,20 +58,6 @@
             timeout-ms = <210>;
             key-positions = <7 8>;
             bindings = <&kp ENTER>;
-            layers = <_BAS>;
-        };
-
-        combo_caps_layer {
-            timeout-ms = <300>;
-            key-positions = <30 33>;
-            bindings = <&to _SFT>;
-            layers = <_BAS>;
-        };
-
-        combo_ble_layer {
-            timeout-ms = <300>;
-            key-positions = <0 33>;
-            bindings = <&to _BLE>;
             layers = <_BAS>;
         };
 
